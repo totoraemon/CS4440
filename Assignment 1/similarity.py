@@ -77,7 +77,8 @@ for i in range(len(docTermMatrix)):
 
     if similarityValue > highestSimilarity:
       highestSimilarity = similarityValue
-      mostSimilarDocs = (i, j)
+      # Adding 1 to i and j to match document numbering (1-indexed)
+      mostSimilarDocs = (i + 1, j + 1)
 
 # Print length of allSimilarities for debugging purposes
 # print(f"Length of allSimilarities: {len(allSimilarities)}")
