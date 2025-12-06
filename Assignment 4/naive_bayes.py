@@ -22,6 +22,8 @@ df = pd.read_csv("weather_training.csv")
 
 #update the training class values according to the discretization (11 values only)
 #--> add your Python code here
+
+# separate date feature (not converted to float) from the rest of the data
 X_training = df.iloc[:, 1:-1].values
 y = df.iloc[:, -1].values
 
